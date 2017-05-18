@@ -12,6 +12,9 @@ Your node application will be running at localhost:8000 after you run "docker-co
 
 
 Stop containers, remove containers, remove images...
+
 docker stop $(docker ps -a -q)
+
 docker rm $(docker ps -a -q)
+
 docker rmi $(docker images -q)
