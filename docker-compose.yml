@@ -1,3 +1,5 @@
+postgres:
+    build: ./postgres
 nginx:
     build: ./nginx
     links:
