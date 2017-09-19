@@ -10,3 +10,4 @@ node1:
     build: ./nodejs
     ports:
         - "8000"
+
