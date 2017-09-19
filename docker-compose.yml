@@ -1,5 +1,13 @@
 postgres:
-    build: ./postgres
+    build: ./postgres    
+    ports:
+        - "5431:5432"
+    environment:
+    - DEBUG=false
+    - DB_USER=dmUser
+    - DB_PASS=P%ssword39
+    - DB_NAME=dam_monitor
+    - DB_EXTENSION=uuid-ossp
 nginx:
     build: ./nginx
     links:
